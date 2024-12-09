@@ -1,0 +1,22 @@
+{
+  "include": [
+    "src/add.js",
+    "src/capitalize.js",
+    "src/countBy.js",
+    "src/difference.js",
+    "src/filter.js",
+    "src/get.js",
+    "src/isDate.js",
+    "src/isEmpty.js",
+    "src/reduce.js",
+    "src/toNumber.js"
+  ],
+  "exclude": ["node_modules", "src/.internal", "coverage", "test"],
+  "reporter": ["lcov", "text"],
+  "all": true,
+  "check-coverage": true,
+  "branches": 0,
+  "lines": 0,
+  "functions": 0,
+  "statements": 0
+}

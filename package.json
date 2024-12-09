@@ -5,17 +5,22 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "test-coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage"
+    "test": "jest",
+    "test-coverage": "c8 jest --coverage",
+    "coverage-report": "npx c8 jest --coverage && type coverage\\lcov.info | npx coveralls-next"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@types/jest": "^29.5.14",
-    "coveralls-next": "^4.2.1",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-jest": "^29.7.0",
+    "c8": "^10.1.2",
     "jest": "^29.7.0"
   },
   "dependencies": {
+    "coveralls": "^3.1.1",
+    "coveralls-next": "^4.2.1",
     "software-testing-assignment": "file:"
   }
 }
