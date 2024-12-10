@@ -7,7 +7,7 @@
   "scripts": {
     "test": "jest",
     "test-coverage": "c8 --reporter=text --reporter=lcov npm test",
-    "coverage-report": "npx c8 jest --coverage && type coverage\\lcov.info | npx coveralls-next"
+    "coveralls-report": "npx c8 jest --coverage && type coverage\\lcov.info | npx coveralls-next"
   },
   "author": "",
   "license": "MIT",
