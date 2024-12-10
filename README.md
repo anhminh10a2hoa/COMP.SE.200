@@ -1,5 +1,14 @@
 # Student template
 
+## Coverage Status
+
+[![Coverage Status](https://coveralls.io/repos/github/anhminh10a2hoa/COMP.SE.200/badge.svg?branch=main)](https://coveralls.io/github/anhminh10a2hoa/COMP.SE.200?branch=main)
+
+## Local dev instructions
+
+1. npm install
+2. npm test
+
 ## Purpose of this repository
 
 This is a project template for students participating in Software Testing course
