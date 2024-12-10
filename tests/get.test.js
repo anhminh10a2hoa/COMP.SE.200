@@ -54,4 +54,9 @@ describe('Tests for get.js', () => {
     expect(get(object, 'd')).toBe(5);
     expect(get(object, 'nonexistent', 'default')).toBe('default');
   });
+
+  // Additional Test: Verifies undefined when default is not provided
+  test('Returns undefined when default value is not provided', () => {
+    expect(get(object, 'nonexistent.property')).toBeUndefined();
+  });
 });
